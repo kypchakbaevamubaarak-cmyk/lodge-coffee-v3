@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lodge Coffee - Меню</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome для соцсетей -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="menu-page">
+
+  <!-- Заголовок -->
+  <header class="menu-header">
+    <h1>Lodge Coffee</h1>
+  </header>
+
+  <!-- Навигация категорий -->
+  <nav class="menu-nav">
+    <button onclick="showCategory('coffee')">Кофе</button>
+    <button onclick="showCategory('tea')">Чай</button>
+    <button onclick="showCategory('drinks')">Напитки</button>
+    <button onclick="showCategory('breakfast')">Завтрак</button>
+    <button onclick="showCategory('desserts')">Десерты</button>
+  </nav>
+
+  <!-- Контейнер для категорий -->
+  <main>
+
+    
+    <div id="menu-container"></div>
+
+    
+    
+<!-- Кофе -->
+ <!-- <div class="category" id="coffee">
+   <h2>Кофе</h2>
+   <div class="items">
+     <div class="item"><img src="images/akspresso.jpg" alt="Эспрессо"><h3>Эспрессо</h3><p>150 сом</p><button onclick="orderItem('Эспрессо')">Заказать</button></div>
+     <div class="item"><img src="images/kapuch.jpg" alt="Капучино"><h3>Капучино</h3><p>200 сом</p><button onclick="orderItem('Капучино')">Заказать</button></div>
+     <div class="item"><img src="images/latte.jpg" alt="Латте"><h3>Латте</h3><p>220 сом</p><button onclick="orderItem('Латте')">Заказать</button></div>
+     <div class="item"><img src="images/amerik.jpg" alt="Американо"><h3>Американо</h3><p>180 сом</p><button onclick="orderItem('Американо')">Заказать</button></div>
+     <div class="item"><img src="images/mokko.jpg" alt="Мокка"><h3>Мокка</h3><p>230 сом</p><button onclick="orderItem('Мокка')">Заказать</button></div>
+     <div class="item"><img src="images/frappe.jpg" alt="Фраппе"><h3>Фраппе</h3><p>240 сом</p><button onclick="orderItem('Фраппе')">Заказать</button></div>
+   </div>
+ </div> -->
+
+<!-- Чай -->
+<!-- <div class="category" id="tea">
+  <h2>Чай</h2>
+  <div class="items">
+    <div class="item"><img src="images/tea.jpg" alt="Черный чай"><h3>Черный чай</h3><p>100 сом</p><button onclick="orderItem('Черный чай')">Заказать</button></div>
+    <div class="item"><img src="images/tea.gren.jpeg" alt="Зеленый чай"><h3>Зеленый чай</h3><p>120 сом</p><button onclick="orderItem('Зеленый чай')">Заказать</button></div>
+    <div class="item"><img src="images/oblep.ch..jpeg" alt="Облепиховый"><h3>Облепиховый чай</h3><p>130 сом</p><button onclick="orderItem('Облепиховый чай')">Заказать</button></div>
+    <div class="item"><img src="images/frukt.ch.jpeg" alt="Фруктовый чай"><h3>Фруктовый чай</h3><p>140 сом</p><button onclick="orderItem('Фруктовый чай')">Заказать</button></div>
+    <div class="item"><img src="images/matcha.jpg" alt="Матча"><h3>Матча</h3><p>150 сом</p><button onclick="orderItem('Матча')">Заказать</button></div>
+    <div class="item"><img src="images/malina.jpg" alt="Малиновый чай"><h3>Малиновый чай</h3><p>130 сом</p><button onclick="orderItem('Травяной чай')">Заказать</button></div>
+  </div>
+</div> -->
+
+<!-- Напитки -->
+<!-- <div class="category" id="drinks">
+  <h2>Напитки</h2>
+  <div class="items">
+    <div class="item"><img src="images/cmuz.jpg" alt="Смузи"><h3>Смузи</h3><p>200 сом</p><button onclick="orderItem('Смузи')">Заказать</button></div>
+    <div class="item"><img src="images/molochnyi.jpg" alt="Молочный коктейль"><h3>Молочный коктейль</h3><p>220 сом</p><button onclick="orderItem('Молочный коктейль')">Заказать</button></div>
+    <div class="item"><img src="images/limonad.jpeg" alt="Лимонад"><h3>Лимонад</h3><p>180 сом</p><button onclick="orderItem('Лимонад')">Заказать</button></div>
+    <div class="item"><img src="images/kakao.jpeg" alt="Какао"><h3>Какао</h3><p>200 сом</p><button onclick="orderItem('Какао')">Заказать</button></div>
+    <div class="item"><img src="images/fresh.jpg" alt="Фреш"><h3>Фреш</h3><p>190 сом</p><button onclick="orderItem('Фреш')">Заказать</button></div>
+    <div class="item"><img src="images/lim.jpg" alt="Лимонная вода"><h3>Лимонная вода</h3><p>180 сом</p><button onclick="orderItem('Лимонная вода')">Заказать</button></div>
+  </div>
+</div> -->
+
+<!-- Завтрак -->
+<!-- <div class="category" id="breakfast">
+  <h2>Завтрак</h2>
+  <div class="items">
+    <div class="item"><img src="images/omlet.jpeg" alt="Омлет"><h3>Омлет</h3><p>180 сом</p><button onclick="orderItem('Омлет')">Заказать</button></div>
+    <div class="item"><img src="images/bliny.jpg" alt="Блины"><h3>Блины</h3><p>150 сом</p><button onclick="orderItem('Блины')">Заказать</button></div>
+    <div class="item"><img src="images/yogurt.jpg" alt="Йогурт с фруктами"><h3>Йогурт с фруктами</h3><p>160 сом</p><button onclick="orderItem('Йогурт с фруктами')">Заказать</button></div>
+    <div class="item"><img src="images/tost.jpg" alt="Тосты"><h3>Тосты</h3><p>140 сом</p><button onclick="orderItem('Тосты')">Заказать</button></div>
+    <div class="item"><img src="images/kasha.jpg" alt="Каша"><h3>Каша</h3><p>150 сом</p><button onclick="orderItem('Каша')">Заказать</button></div>
+    <div class="item"><img src="images/miysli.jpg" alt="Мюсли"><h3>Мюсли</h3><p>160 сом</p><button onclick="orderItem('Мюсли')">Заказать</button></div>
+  </div>
+</div> -->
+
+<!-- Десерты -->
+<!-- <div class="category" id="desserts">
+  <h2>Десерты</h2>
+  <div class="items">
+    <div class="item"><img src="images/cake.jpg" alt="Торт"><h3>Торт</h3><p>200 сом</p><button onclick="orderItem('Торт')">Заказать</button></div>
+    <div class="item"><img src="images/capcake.jpg" alt="Пирожное"><h3>Пирожное</h3><p>150 сом</p><button onclick="orderItem('Пирожное')">Заказать</button></div>
+    <div class="item"><img src="images/moroj.jpg" alt="Мороженое"><h3>Мороженое</h3><p>180 сом</p><button onclick="orderItem('Мороженое')">Заказать</button></div>
+    <div class="item"><img src="images/puding.jpg" alt="Пудинг"><h3>Пудинг</h3><p>160 сом</p><button onclick="orderItem('Пудинг')">Заказать</button></div>
+    <div class="item"><img src="images/cheesecake.jpeg" alt="Чизкейк"><h3>Чизкейк</h3><p>200 сом</p><button onclick="orderItem('Чизкейк')">Заказать</button></div>
+    <div class="item"><img src="images/makar.jpg" alt="Макарон"><h3>Макарон</h3><p>170 сом</p><button onclick="orderItem('Макарон')">Заказать</button></div>
+  </div>
+</div> -->
+
+  </main>
+
+  
+
+  <!-- Футер -->
+  <footer>
+    <p>Позвонить: +996 555 123 456</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Оформление заказа</h2>
+        <p id="modalProductName"></p>
+        <div class="form-group">
+            <input type="text" id="custName" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" id="custPhone" placeholder="+996 (___) ___-___" required>
+        </div>
+        <button id="confirmOrderBtn" class="confirm-btn">Подтвердить заказ</button>
+    </div>
+</div>
+
+<div id="successModal" class="modal">
+    <div class="modal-content success-card">
+        <div class="success-icon">✔</div>
+        <h2>Заказ принят!</h2>
+        <p id="successMessage"></p>
+        <button onclick="closeSuccessModal()" class="confirm-btn">Отлично</button>
+    </div>
+</div>
+
+  <script src="https://unpkg.com/imask"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
